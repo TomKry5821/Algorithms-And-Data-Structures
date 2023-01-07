@@ -13,7 +13,7 @@ public class SingleLinkedList {
             return;
         }
         var headCopy = head;
-        while (!Objects.isNull(headCopy.next)) {
+        while (Objects.nonNull(headCopy.next)) {
             headCopy = headCopy.next;
         }
         headCopy.next = new SingleLinkedListNode(data);
@@ -52,7 +52,7 @@ public class SingleLinkedList {
         List<Integer> arr = new ArrayList<>();
         var headCopy = head;
 
-        while (!Objects.isNull(headCopy)) {
+        while (Objects.nonNull(headCopy)) {
             arr.add(headCopy.data);
             headCopy = headCopy.next;
         }
