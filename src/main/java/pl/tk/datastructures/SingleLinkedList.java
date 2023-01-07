@@ -29,6 +29,25 @@ public class SingleLinkedList {
         head = newNode;
     }
 
+    public void addAtIndex(int data, int index) {
+        if (Objects.isNull(head))
+            throw new IndexOutOfBoundsException();
+
+        var headCopy = head;
+        int actualIndex = 0;
+        while (Objects.nonNull(headCopy.next)) {
+            if (actualIndex == index - 1) {
+                var newNode = new SingleLinkedListNode(data);
+                newNode.next = headCopy.next;
+                headCopy.next = newNode;
+                return;
+            }
+            actualIndex += 1;
+            headCopy = headCopy.next;
+        }
+        throw new IndexOutOfBoundsException();
+    }
+
     public Integer[] toArray() {
         List<Integer> arr = new ArrayList<>();
         var headCopy = head;
