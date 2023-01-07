@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="17135c58-b72c-4a06-8a7d-075f9e3d6bcf" name="Changes" comment="" />
+    <list default="true" id="17135c58-b72c-4a06-8a7d-075f9e3d6bcf" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/tk/datastructures/SingleLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/tk/datastructures/SingleLinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2K1546NgbwIkZRKjdIb41cIKp2h" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -16,9 +37,119 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/tomas/Desktop/Repos/Algorithms-And-Data-Structures/src/test/java/pl/tk",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tomas\Desktop\Repos\Algorithms-And-Data-Structures\src\test\java\pl\tk" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="pl.tk.datastructures" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.tk.datastructures" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SingleLinkedListTest">
+    <configuration name="SingleLinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms-And-Data-Structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.tk.datastructures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.tk.datastructures" />
+      <option name="MAIN_CLASS_NAME" value="pl.tk.datastructures.SingleLinkedListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingleLinkedListTest.testAddAtIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms-And-Data-Structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.tk.datastructures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.tk.datastructures" />
+      <option name="MAIN_CLASS_NAME" value="pl.tk.datastructures.SingleLinkedListTest" />
+      <option name="METHOD_NAME" value="testAddAtIndex" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingleLinkedListTest.testAddBoth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms-And-Data-Structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.tk.datastructures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.tk.datastructures" />
+      <option name="MAIN_CLASS_NAME" value="pl.tk.datastructures.SingleLinkedListTest" />
+      <option name="METHOD_NAME" value="testAddBoth" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingleLinkedListTest.testAddToIndexShouldThrowIndexOutOfBounds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms-And-Data-Structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.tk.datastructures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.tk.datastructures" />
+      <option name="MAIN_CLASS_NAME" value="pl.tk.datastructures.SingleLinkedListTest" />
+      <option name="METHOD_NAME" value="testAddToIndexShouldThrowIndexOutOfBounds" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingleLinkedListTest.testCombinedAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms-And-Data-Structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.tk.datastructures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.tk.datastructures" />
+      <option name="MAIN_CLASS_NAME" value="pl.tk.datastructures.SingleLinkedListTest" />
+      <option name="METHOD_NAME" value="testCombinedAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SingleLinkedListTest" />
+        <item itemvalue="JUnit.SingleLinkedListTest.testCombinedAdd" />
+        <item itemvalue="JUnit.SingleLinkedListTest.testAddAtIndex" />
+        <item itemvalue="JUnit.SingleLinkedListTest.testAddToIndexShouldThrowIndexOutOfBounds" />
+        <item itemvalue="JUnit.SingleLinkedListTest.testAddBoth" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -27,7 +158,42 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673129055624</updated>
+      <workItem from="1673129056900" duration="1273000" />
+      <workItem from="1673130347694" duration="4722000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1673129100459</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673129100459</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1673129332485</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673129332485</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>
