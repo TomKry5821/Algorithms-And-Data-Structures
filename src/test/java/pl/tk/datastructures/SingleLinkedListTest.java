@@ -10,7 +10,6 @@ class SingleLinkedListTest {
     final int OUT_OF_BOUND_INDEX = 10;
     final int DATA = 5;
     final int INDEX_DATA = 0;
-    final int EXPECTED_ARRAY_LENGTH = 4;
     private final SingleLinkedList singleLinkedList = new SingleLinkedList();
 
     @BeforeEach
@@ -51,6 +50,7 @@ class SingleLinkedListTest {
     void testAddAtIndex() {
         //GIVEN
         final int EXPECTED_INDEX_DATA = 0;
+        final int EXPECTED_ARRAY_LENGTH = 4;
 
         //WHEN
         singleLinkedList.addToStart(DATA);
