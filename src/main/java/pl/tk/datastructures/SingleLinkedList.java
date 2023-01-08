@@ -48,6 +48,45 @@ public class SingleLinkedList {
         throw new IndexOutOfBoundsException();
     }
 
+    public void deleteFirst(){
+        if(Objects.isNull(head))
+                return;
+        head = head.next;
+    }
+
+    public void deleteLast(){
+        if(Objects.isNull(head))
+            return;
+
+        var headCopy = head;
+        while(Objects.nonNull(headCopy.next.next)){
+            headCopy = headCopy.next;
+        }
+
+        headCopy.next = null;
+    }
+
+    public void deleteAtIndex(int index){
+        if(Objects.isNull(head))
+            throw new IndexOutOfBoundsException();
+        if(index == 0){
+            deleteFirst();
+            return;
+        }
+
+        var headCopy = head;
+        int actualIndex = 0;
+        while (Objects.nonNull(headCopy.next)) {
+            if (actualIndex == index - 1) {
+                headCopy.next = headCopy.next.next;
+                return;
+            }
+            actualIndex += 1;
+            headCopy = headCopy.next;
+        }
+
+        throw new IndexOutOfBoundsException();
+    }
     public Integer[] toArray() {
         List<Integer> arr = new ArrayList<>();
         var headCopy = head;
