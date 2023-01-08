@@ -103,7 +103,7 @@ class SingleLinkedListTest {
     }
 
     @Test
-    void testDeleteFirst(){
+    void testDeleteFirst() {
         //GIVEN
         Integer[] expected = {5, 5, 5};
         singleLinkedList.addToStart(DATA);
@@ -119,7 +119,7 @@ class SingleLinkedListTest {
     }
 
     @Test
-    void testDeleteLast(){
+    void testDeleteLast() {
         //GIVEN
         Integer[] expected = {0, 5, 5, 5};
         singleLinkedList.addToStart(DATA);
@@ -136,7 +136,7 @@ class SingleLinkedListTest {
     }
 
     @Test
-    void testDeleteAtIndex(){
+    void testDeleteAtIndex() {
         //GIVEN
         Integer[] expected = {0, 0};
         singleLinkedList.addToStart(DATA);
@@ -153,8 +153,9 @@ class SingleLinkedListTest {
         //THEN
         Assertions.assertArrayEquals(expected, singleLinkedList.toArray());
     }
+
     @Test
-    void testDeleteAtIndexShouldThrowIndexOutOfBounds(){
+    void testDeleteAtIndexShouldThrowIndexOutOfBounds() {
         //GIVEN
         singleLinkedList.addToEnd(DATA);
 
@@ -165,11 +166,11 @@ class SingleLinkedListTest {
 
 
     @Test
-    void testCombinedDelete(){
+    void testCombinedDelete() {
         //GIVEN
         Integer[] expected = {3, 4, 5, 6, 7};
         Integer[] data = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        for(int el : data){
+        for (int el : data) {
             singleLinkedList.addToEnd(el);
         }
 
@@ -182,6 +183,23 @@ class SingleLinkedListTest {
 
         //THEN
         Assertions.assertArrayEquals(expected, singleLinkedList.toArray());
+    }
+
+    @Test
+    void testReverse() {
+        //GIVEN
+        Integer[] data = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        Integer[] expected = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+
+        //WHEN
+        for (int el : data) {
+            singleLinkedList.addToEnd(el);
+        }
+        singleLinkedList.reverse();
+
+        //THEN
+        Assertions.assertArrayEquals(expected, singleLinkedList.toArray());
+
     }
 
 
