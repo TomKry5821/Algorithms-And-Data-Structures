@@ -102,5 +102,87 @@ class SingleLinkedListTest {
         Assertions.assertArrayEquals(expected, singleLinkedList.toArray());
     }
 
+    @Test
+    void testDeleteFirst(){
+        //GIVEN
+        Integer[] expected = {5, 5, 5};
+        singleLinkedList.addToStart(DATA);
+        singleLinkedList.addToStart(DATA);
+        singleLinkedList.addToStart(DATA);
+        singleLinkedList.addToStart(INDEX_DATA);
+
+        //WHEN
+        singleLinkedList.deleteFirst();
+
+        //THEN
+        Assertions.assertArrayEquals(expected, singleLinkedList.toArray());
+    }
+
+    @Test
+    void testDeleteLast(){
+        //GIVEN
+        Integer[] expected = {0, 5, 5, 5};
+        singleLinkedList.addToStart(DATA);
+        singleLinkedList.addToStart(DATA);
+        singleLinkedList.addToStart(DATA);
+        singleLinkedList.addToStart(DATA);
+        singleLinkedList.addToStart(INDEX_DATA);
+
+        //WHEN
+        singleLinkedList.deleteLast();
+
+        //THEN
+        Assertions.assertArrayEquals(expected, singleLinkedList.toArray());
+    }
+
+    @Test
+    void testDeleteAtIndex(){
+        //GIVEN
+        Integer[] expected = {0, 0};
+        singleLinkedList.addToStart(DATA);
+        singleLinkedList.addToStart(INDEX_DATA);
+        singleLinkedList.addToStart(DATA);
+        singleLinkedList.addToStart(INDEX_DATA);
+        singleLinkedList.addToStart(DATA);
+
+        //WHEN
+        singleLinkedList.deleteAtIndex(0);
+        singleLinkedList.deleteAtIndex(1);
+        singleLinkedList.deleteAtIndex(2);
+
+        //THEN
+        Assertions.assertArrayEquals(expected, singleLinkedList.toArray());
+    }
+    @Test
+    void testDeleteAtIndexShouldThrowIndexOutOfBounds(){
+        //GIVEN
+        singleLinkedList.addToEnd(DATA);
+
+        //WHEN
+        //THEN
+        Assertions.assertThrows(IndexOutOfBoundsException.class, () -> singleLinkedList.deleteAtIndex(INDEX));
+    }
+
+
+    @Test
+    void testCombinedDelete(){
+        //GIVEN
+        Integer[] expected = {3, 4, 5, 6, 7};
+        Integer[] data = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        for(int el : data){
+            singleLinkedList.addToEnd(el);
+        }
+
+        //WHEN
+        singleLinkedList.deleteFirst();
+        singleLinkedList.deleteFirst();
+        singleLinkedList.deleteLast();
+        singleLinkedList.deleteAtIndex(5);
+        singleLinkedList.deleteAtIndex(5);
+
+        //THEN
+        Assertions.assertArrayEquals(expected, singleLinkedList.toArray());
+    }
+
 
 }
