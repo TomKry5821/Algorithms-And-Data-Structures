@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17135c58-b72c-4a06-8a7d-075f9e3d6bcf" name="Changes" comment="Created tests for all add methods">
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/tk/datastructures/SingleLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/tk/datastructures/SingleLinkedListTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="17135c58-b72c-4a06-8a7d-075f9e3d6bcf" name="Changes" comment="Changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +155,7 @@
       <option name="presentableId" value="Default" />
       <updated>1673129055624</updated>
       <workItem from="1673129056900" duration="1273000" />
-      <workItem from="1673130347694" duration="5483000" />
+      <workItem from="1673130347694" duration="5577000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1673129100459</created>
@@ -236,7 +234,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673135715672</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Created tests for all add methods">
+      <created>1673135921307</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1673135921307</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Changes">
+      <created>1673135935123</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1673135935123</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,12 +268,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added JUnit dependency" />
-    <MESSAGE value="Changes" />
     <MESSAGE value="Created SingleLinkedListNode class and toArray method" />
     <MESSAGE value="Added addToStart and addToEnd methods" />
     <MESSAGE value="Added addAtIndex method" />
     <MESSAGE value="Changed !isNull to nonNull method" />
     <MESSAGE value="Created tests for all add methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created tests for all add methods" />
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
 </project>
