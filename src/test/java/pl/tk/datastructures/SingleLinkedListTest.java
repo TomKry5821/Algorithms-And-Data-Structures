@@ -74,10 +74,10 @@ class SingleLinkedListTest {
     @Test
     void testAddToIndexShouldThrowIndexOutOfBounds() {
         //GIVEN
-        //WHEN
         singleLinkedList.addToStart(DATA);
         singleLinkedList.addToStart(DATA);
 
+        //WHEN
         //THEN
         Assertions.assertThrows(IndexOutOfBoundsException.class, () -> singleLinkedList.addAtIndex(DATA, OUT_OF_BOUND_INDEX));
     }
