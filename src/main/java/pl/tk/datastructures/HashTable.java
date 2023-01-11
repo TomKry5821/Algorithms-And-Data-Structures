@@ -1,6 +1,7 @@
 package pl.tk.datastructures;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class HashTable {
 
@@ -31,4 +32,18 @@ public class HashTable {
             buckets.add(null);
         }
     }
+
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    public int size() {
+        return size;
+    }
+
+    private int hashCode(int data){
+        return Objects.hashCode(data);
+    }
+
+
 }
